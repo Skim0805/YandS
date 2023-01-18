@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>KakaoTalk Embed</title>
+<script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+<p><strong>Click the image below</strong> By. Blackcats4567</p>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+  />
+</a>
+<script type="text/javascript">
+ Kakao.init('a5122ddf4547afc0dc3ff6bdaa932cc4');
+  function sendLink() {
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '김용현과 김승연, 결혼합니다',
+        description: '2023년 2월 18일(토) 오후 2시',
+        imageUrl:
+          'file:///C:/Users/bafgc/OneDrive/Desktop/%EC%8A%B9%EC%97%B0/Y&S/Pictures/IMG_3559%20copy_06.jpg',
+        link: {
+          mobileWebUrl: 'https://www.happilyeverkims.love/',
+          webUrl: 'https://www.happilyeverkims.love/',
+        },
+      },
+      buttons: [
+        {
+          title: '청첩장을 확인하세요',
+          link: {
+            mobileWebUrl: 'https://www.happilyeverkims.love/',
+            webUrl: 'https://www.happilyeverkims.love/',
+          },
+        },
+      ],
+    })
+  }
+</script>
+<!-- www.blackcats4567.com -->
+<!-- When clicking on the image/button, the address should be placed in Kakao Developers' Application> Platform> Web to be displayed successfully when clicked. -->
+  </body>
+</html>
